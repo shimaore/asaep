@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="no-js" manifest="cache-manifest">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>asaep</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/vendor/jquery.mobile-1.3.2.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+        <div data-role="page" id="signin" class="if-signed-out">
+          <div data-role="header">
+            <p>
+              <a href="#signup" data-role="button" data-inline="true" class="if-signed-out">Sign Up</a>
+              <a href="#resetpassword" data-role="button" data-inline="true" class="if-signed-out">Reset Password</a>
+            </p>
+          </div>
+          <div data-role="content">
+            <form>
+              <label>Username</label>
+              <input class="username">
+              <label>Password</label>
+              <input type="password" class="password">
+              <input type="submit" value="Sign In">
+            </form>
+          </div>
+        </div>
+
+        <div data-role="page" id="signup" class="if-signed-out">
+          <div data-role="header">
+            <p>
+              <a href="#signin" data-role="button" data-inline="true" class="if-signed-out">Sign In</a>
+              <a href="#resetpassword" data-role="button" data-inline="true" class="if-signed-out">Reset Password</a>
+            </p>
+          </div>
+          <div data-role="content">
+            <form>
+              <label>Username</label>
+              <input class="username">
+              <label>Password</label>
+              <input type="password" class="password">
+              <label>Confirm Password</label>
+              <input type="password" class="verify_password">
+              <input type="submit" value="Sign Up">
+            </form>
+          </div>
+        </div>
+
+        <div data-role="page" id="resetpassword" class="if-signed-out">
+          <div data-role="header">
+            <p>
+              <a href="#signin" data-role="button" data-inline="true" class="if-signed-out">Sign In</a>
+              <a href="#signup" data-role="button" data-inline="true" class="if-signed-out">Sign Up</a>
+            </p>
+          </div>
+          <div data-role="content">
+            <form>
+              <label>Username</label>
+              <input class="username">
+              <input type="submit" value="Reset Password">
+            </form>
+          </div>
+        </div>
+        <div data-role="page" id="changepassword" class="if-signed-in">
+          <div data-role="header">
+            <p>
+              <a href="#" data-role="button" data-inline="true" class="if-signed-in signout">Sign Out</a>
+              Hello, <span class="username">...</span>.
+            </p>
+          </div>
+          <div data-role="content">
+            <form>
+              <label>Old Password</label>
+              <input class="old_password">
+              <label>New Password</label>
+              <input class="new_password">
+              <input type="submit" value="Change Password">
+            </form>
+          </div>
+        </div>
+        <div data-role="page" id="listview" class="if-signed-in">
+          <div data-role="header">
+            <p>
+              <a href="#" data-role="button" data-inline="true" class="if-signed-in signout">Sign Out</a>
+              <a href="#changepassword" data-role="button" data-inline="true" class="if-signed-in">Change Password</a>
+              Hello, <span class="username">...</span>.
+            </p>
+          </div>
+          <div data-role="content">
+            <ul data-role="listview">
+            </ul>
+          </div>
+        </div>
+
+
+
+    <script src="assets/vendor/jquery-1.9.1.js"></script>
+    <script src="assets/vendor/hoodie.js"></script>
+    <script src="assets/vendor/jquery.mobile-1.3.2.js"></script>
+    <script src="assets/vendor/coffee-script.js"></script>
+    <script src="main.coffee.md" type="text/coffeescript"></script>
+  </body>
+</html>

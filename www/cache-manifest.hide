@@ -1,0 +1,9 @@
+CACHE MANIFEST
+index.html
+main.css
+main.coffee.md
+assets/vendor/jquery.mobile-1.3.2.css
+assets/vendor/jquery-1.9.1.js
+assets/vendor/hoodie.js
+assets/vendor/jquery.mobile-1.3.2.js
+assets/vendor/coffee-script.js

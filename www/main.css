@@ -1,0 +1,8 @@
+
+html.signed-out .if-signed-in {
+  display: none;
+}
+
+html.signed-in .if-signed-out {
+  display: none;
+}
